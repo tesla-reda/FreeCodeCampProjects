@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <div class="main">
+      <p id="description">Let us know how we can improve freeCodeCamp</p>
+
+      <form id="survey-form" method="post">
+        <div class="row">
+          <div class="label-div">
+            <label for="Name" id="name-label">*Name:</label>
+          </div>
+          <div class="input-div">
+            <input type="text" name="Name" placeholder="Enter ypur name" id="name">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="label-div">
+            <label for="email" id="email-label">*Email:</label>
+          </div>
+          <div class="input-div">
+            <input type="email" name="email" placeholder="Enter your Email" id="email">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="label-div">
+            <label for="number" id="number-label">*age:</label>
+          </div>
+          <div class="input-div">
+            <input type="number" name="number" placeholder="Age" min="1" max="100" id="number">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="label-div">
+            <label for="role">Which option best describes your current role?</label>
+          </div>
+          <div class="input-div">
+              <select name="role" id="dropdown">
+                <option disabled value>Select an option</option>
+                <option value="Student" selected>Student</option>
+                <option value="Full time job">Full time job</option>
+                <option value="Full time learner">Full time learner</option>
+                <option value="Prefer not to say">Prefer not to say</option>
+                <option value="Other">Other</option>
+              </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="label-div">
+            <label for="name">How likely is that you would recommend <br> freeCodeCamp to a friend?</label>
+          </div>
+          <div class="input-div">
+            <ul>
+              <li><input type="radio" name="name" value="Definitely">Definitely</li>
+              <li><input type="radio" name="name" value="Maybe">Maybe</li>
+              <li><input type="radio" name="name" value="Not sure">Not sure</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="label-div">
+            <label for="like">What do you like most in FCC:</label>
+          </div>
+          <div class="input-div">
+              <select name="like">
+                <option disabled value>Select an option</option>
+                <option value="Challenges" selected>Challenges</option>
+                <option value="Projects">Projects</option>
+                <option value="Community">Community</option>
+                <option value="Open source">Open source</option>
+              </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="label-div">
+            <label for="future">Things that should be improved in the future <br> (Check all that apply):</label>
+          </div>
+          <div class="input-div">
+              <ul>
+                <li><input type="checkbox" name="future" value="Front-end Projects">Front-end Projects</li>
+                <li><input type="checkbox" name="future" value="Back-end Projects">Back-end Projects</li>
+                <li><input type="checkbox" name="future" value="Data Visualization">Data Visualization</li>
+                <li><input type="checkbox" name="future" value="Challenges">Challenges</li>
+                <li><input type="checkbox" name="future" value="Open Source Community">Open Source Community</li>
+                <li><input type="checkbox" name="future" value="Gitter help rooms">Gitter help rooms</li>
+                <li><input type="checkbox" name="future" value="Videos">Videos</li>
+                <li><input type="checkbox" name="future" value="City Meetups">City Meetups</li>
+                <li><input type="checkbox" name="future" value="Wiki">Wiki</li>
+                <li><input type="checkbox" name="future" value="Forum">Forum</li>
+                <li><input type="checkbox" name="future" value="Additional Courses">Additional Courses</li>
+              </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="label-div">
+            <label for="comment">Any Comments or Suggestions?</label>
+          </div>
+          <div class="input-div">
+              <textarea name="comment" id="comment" placeholder="Enter your comment here..."></textarea>
+          </div>
+        </div>
+        <button type="submit" name="submit" id="submit">Submit</button>
+
+
+
+
+
+
+
+
+
+
+      </form>
+
+    </div>
+
+  </body>
+</html>

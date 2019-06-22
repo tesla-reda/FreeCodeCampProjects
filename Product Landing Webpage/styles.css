@@ -1,0 +1,258 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: helvetica, sans-serif;
+  background-color: #eee;
+}
+/* =================================header=================================== */
+#header {
+  position: sticky;
+  top: 0;
+  /* z-index: 1; */
+  width: 100%;
+  height: auto;
+  padding: 0px 15px;
+  display: flex;
+}
+.logo {
+  flex: 50%;
+  padding-left: 40px;
+  padding-top: 35px;
+}
+#header-img {
+  width: 300px;
+  height: auto;
+}
+#nav-bar {
+  flex: 50%;
+}
+#nav-bar ul {
+  list-style-type: none;
+  padding-top: 45px;
+  float: right;
+  flex-wrap: nowrap;
+}
+#nav-bar ul li {
+  display: inline;
+  padding-right: 60px;;
+}
+.nav-link {
+  text-decoration: none;
+  color: #000;
+}
+/* ===============================container================================== */
+
+.container {
+  width: 100%;
+  height: auto;
+  margin-top: 25px;
+
+}
+#subscribe {
+  text-align: center;
+
+}
+#email {
+  width: 300px;
+  height: 30px;
+  padding: 8px;
+  margin-top: 20px;
+  background-color: #fff;
+  border: 1PX solid #C0C0C0;
+
+}
+#submit {
+  width: 180px;
+  height: 35px;
+  background-color: #f1c40f;
+  font-weight: bold;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  margin-top: 15px;
+  padding-top: 5px;
+}
+/*=================================services===================================*/
+#Features {
+  width: 80%;
+  margin: 70px auto;
+
+}
+.row {
+  display: flex;
+  margin-top: 60px;
+
+}
+.serv-logo {
+  flex: 20%;
+  text-align: center;
+  padding-top: 5px;
+}
+#lighter-logo {
+  width: 30px;
+  height: 50px;
+
+}
+#shipping-logo {
+  width: 50px;
+  height: 70px;
+
+}
+#quality-logo {
+  width: 50px;
+  height: 70px;
+
+}
+.description {
+  flex: 80%;
+  padding-left: 20px;
+
+}
+.description h2 {
+  margin-bottom: 5px
+}
+
+#HowItWork{
+  text-align: center;
+  margin-bottom: 60px;
+}
+#HowItWork video {
+  width: 550px;
+  height: auto;
+  border: none;
+}
+#Pricing {
+  display: flex;
+  width: 80%;
+  height: auto;
+  margin: 30px auto;
+}
+.tenor, .bass, .valve {
+  flex: 33%;
+  margin: 15px;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+.categorie {
+  background-color: #ddd;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.price {
+  margin-bottom: 15px;
+}
+.desc {
+   list-style-type: none;
+   margin-bottom: 25px;
+   line-height:
+ }
+.desc li {
+   padding: 5px 0;
+ }
+.btn {
+   background-color: #f1c40f;
+   width: 100px;
+   height: 40px;
+   padding: 5px;
+   border: none;
+   border-radius: 4px;
+   font-weight: bold;
+   font-size: 16px;
+   margin-bottom: 10px;
+ }
+/*==================================footer==================================  */
+#footer {
+   background-color: #ddd;
+   width: 80%;
+   height: 90px;
+   margin: 0 auto;
+   padding: 20px;
+
+ }
+#footer ul {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #ddd;
+  margin-bottom: 10px;
+}
+ #footer ul li {
+   list-style-type: none;
+   background-color: #ddd;
+   display: inline-block;
+   margin-right: 20px;
+ }
+ #footer ul li a {
+   color: #000;
+   text-decoration: none;
+   background-color: #ddd;
+   font-size: 15px;
+ }
+ #footer span {
+   float: right;
+   background-color: #ddd;
+   color: #444;
+   font-size: 14px;
+ }
+/* ===================================media================================== */
+
+@media (max-width: 900px) {
+  #Pricing {
+    flex-direction: column;
+  }
+  .tenor, .bass, .valve {
+    width: 300px;
+    margin: 15px auto;
+  }
+}
+
+
+@media (max-width: 850px) {
+  #nav-bar ul {
+    float: none;
+    text-align: center;
+    padding-top : 10px;
+    padding-bottom: 10px;
+
+  }
+  #nav-bar ul li {
+    display: block;
+    padding-top: 10px;
+    padding-right: 0px;
+  }
+  #footer {
+     width: 100%
+   }
+}
+
+
+@media (max-width: 520px) {
+  #header {
+    flex-direction: column;
+  }
+  .logo {
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 15px;
+    padding-left: 0;
+  }
+  #nav-bar ul {
+    padding-top : 0px;
+    padding-bottom: 10px;
+  }
+  #nav-bar ul li {
+    padding-right: 0px;
+    padding-top: 10px;
+  }
+  .serv-logo {
+    display: none;
+  }
+  .description {
+    flex: 100%;
+    text-align: center;
+  }
+}

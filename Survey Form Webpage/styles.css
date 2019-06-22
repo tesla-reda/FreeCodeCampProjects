@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: #a9d7d1;
+  font-family: helvetica;
+}
+#title{
+  text-align: center;
+  margin: 20px auto;
+  font-size: 2.5em;
+}
+.main{
+  background-color: #fff;
+  margin: 5px auto;
+  width: 75%;
+  border-radius: 5px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #333;
+  font-size: 1.2em;
+}
+#description{
+  margin-bottom: 20px;
+}
+.row{
+  display: flex;
+  margin-bottom: 20px;
+}
+.label-div{
+  flex: 50%;
+  text-align: right;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+
+}
+.input-div{
+  flex: 50%;
+  text-align: left;
+  margin-left: 10px;
+}
+#name, #email, #number{
+  width: 70%;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #c0c0c0;
+  border-radius: 3px;
+}
+select{
+  width: 130px;
+  height: 35px;
+  padding: 5px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+ul {
+  list-style-type: none;
+}
+ul li{
+  margin-bottom: 10px;
+}
+ul li input{
+  margin-right: 5px;
+}
+#comment{
+  width: 60%;
+  height: 55px;
+  padding: 5px;
+  border: 1px solid #c0c0c0;
+  border-radius: 3px;
+}
+#submit{
+  background-color: #59ace0;
+  color: #fff;
+  font-size: 1em;
+  border: 0px;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+}
+
+@media (max-width: 600px){
+  .row{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  .label-div{
+    flex: 100%;
+    text-align: left;
+
+  }
+  .input-div{
+    flex: 100%;
+    text-align: left;
+
+  }
+}
